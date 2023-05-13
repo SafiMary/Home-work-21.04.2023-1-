@@ -36,7 +36,7 @@ namespace Home_work_21._04._2023_1_
                 {
                     CommandText = "CREATE TABLE IF NOT EXISTS [Person]([id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, [name] TEXT, [phone] byte, [email] TEXT);"
                 };
-                command.ExecuteNonQuery();
+                command.ExecuteNonQuery();  
                 Console.WriteLine("Таблица создана");
             }
             Regex regexemail = new Regex(@"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$", RegexOptions.IgnoreCase);
